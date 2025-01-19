@@ -13,7 +13,7 @@ export const MenuItems = ({ isOpen, closeMenu }: MenuItemsProps) => {
         isOpen
           ? "visible max-h-screen opacity-100"
           : "max-h-0 opacity-0 md:opacity-100"
-      } md:flex md:flex-row md:static md:visible md:w-auto `}
+      } md:flex md:flex-row md:static md:visible md:w-auto md:pr-0`}
       aria-hidden={!isOpen}
     >
       <li className="mb-2 mt-2 md:mb-0 md:mt-0">
@@ -32,7 +32,7 @@ export const MenuItems = ({ isOpen, closeMenu }: MenuItemsProps) => {
         </a>
       </li>
       <li className="mb-2 md:mb-0">
-        <a className="p-2 mr-2" href="#contact" onClick={closeMenu}>
+        <a className="p-2" href="#contact" onClick={closeMenu}>
           Contact
         </a>
       </li>

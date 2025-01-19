@@ -14,7 +14,6 @@ export default function Main() {
       </header>
       <main className="max-w-[1230px]">
         <Home />
-        <About />
         <Services />
         <Portfolio />
         <Contact />

@@ -20,7 +20,7 @@ export const Navigation = () => {
       className="fixed w-full left-0 top-0 z-50 bg-gray-800 text-white shadow-md"
       aria-label="Main Navigation"
     >
-      <div className="flex relative items-center justify-between max-w-[1230px] mx-auto py-4 px-2">
+      <div className="flex relative items-center justify-between max-w-[1230px] mx-auto p-4 lg:px-0">
         <Logo />
         <BurgerMenu toggleMenu={toggleMenu} isOpen={isOpen} />
         <MenuItems isOpen={isOpen} closeMenu={closeMenu} />
