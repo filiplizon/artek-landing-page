@@ -1,10 +1,11 @@
-import Home from "./components/Home";
-import About from "./components/About";
-import Services from "./components/Services";
-import Portfolio from "./components/Portfolio";
-import Contact from "./components/Contact";
-import { Navigation } from "./components/Navigation";
-import { Footer } from "./components/Footer";
+import Home from "./components/pages/Home";
+
+import Portfolio from "./components/pages/Portfolio";
+import Contact from "./components/pages/Contact";
+import { Navigation } from "./components/organisms/Navigation";
+import { Footer } from "./components/organisms/Footer";
+import Services from "./components/pages/Services";
+import WhyWe from "./components/organisms/WhyWe";
 
 export default function Main() {
   return (
@@ -12,9 +13,10 @@ export default function Main() {
       <header>
         <Navigation />
       </header>
-      <main className="max-w-[1230px]">
-        <Home />
+      <Home />
+      <main className="w-full">
         <Services />
+        <WhyWe />
         <Portfolio />
         <Contact />
       </main>

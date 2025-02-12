@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { Logo } from "./Logo";
-import { BurgerMenu } from "./BurgerMenu";
-import { MenuItems } from "./MenuItems";
+import { Logo } from "../atoms/Logo";
+import { BurgerMenu } from "../atoms/BurgerMenu";
+import { MenuItems } from "../molecules/MenuItems";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,10 +17,10 @@ export const Navigation = () => {
 
   return (
     <nav
-      className="fixed w-full left-0 top-0 z-50 bg-gray-800 text-white shadow-md"
+      className="fixed w-full left-0 top-0 z-50 bg-gray-800 text-white shadow"
       aria-label="Main Navigation"
     >
-      <div className="flex relative items-center justify-between max-w-[1230px] mx-auto p-4 lg:px-0">
+      <div className="flex relative h-[60px] items-center justify-between max-w-[1150px] mx-auto py-4 px-2">
         <Logo />
         <BurgerMenu toggleMenu={toggleMenu} isOpen={isOpen} />
         <MenuItems isOpen={isOpen} closeMenu={closeMenu} />

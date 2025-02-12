@@ -8,9 +8,16 @@ export default {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        "inset-0": "inset 0 0 0 0 #ffffff",
+        "inset-100": "inset 100px 0 0 0 #ffffff",
+      },
+      transitionProperty: {
+        "color-shadow": "color, box-shadow",
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
       },
     },
   },

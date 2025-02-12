@@ -3,15 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --primary: #4d869c;
+  --secondary: #4d869c;
 }
 
 html {
@@ -22,4 +15,40 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+#portfolio .slick-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+}
+
+#portfolio .slick-prev {
+  left: 0;
+  display: none !important;
+}
+
+#portfolio .slick-next {
+  right: 0;
+  display: none !important;
+}
+
+#portfolio .slick-dots {
+  right: 0;
+  bottom: -60px;
+}
+
+#portfolio .slick-dots li button:before {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  #portfolio .slick-prev {
+    display: block !important;
+  }
+
+  #portfolio .slick-next {
+    display: block !important;
+  }
 }

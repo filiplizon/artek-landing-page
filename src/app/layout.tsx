@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ART BUD - Gevelsystemen",
-  description: "ART BUD - Gevelsystemen",
+  title: "ART-BUD",
+  description: "ART-BUD",
 };
 
 export default function RootLayout({
